@@ -142,7 +142,9 @@
                   /*script.js*/
                   // Selecionar o elemento com ID "titulo"
                   var tituloElemento = document.getElementById('titulo');
-                  console.log(tituloElemento.textContent); // Exibirá o texto dentro do elemento h1
+                   function exemplo1(){
+                  alert(tituloElemento.textContent); // Exibirá o texto dentro do elemento h1
+                   }
                 </code>
               </pre>
                </div>
@@ -180,8 +182,9 @@
                   /*script.js*/
                   // Selecionar o elemento com a classe "destaque"
                   var destaqueElemento = document.querySelector('.destaque');
+                   function exemplo2(){
                   console.log(destaqueElemento.textContent); // Exibirá o texto dentro do elemento h1
-              </script>
+                   }
                 </code>
               </pre>
                </div>
@@ -220,11 +223,12 @@
                   /*script.js*/
                   // Selecionar todos os elementos com a classe "paragrafo"
                   var paragrafos = document.getElementsByClassName('paragrafo');
-          
+                   function exemplo3(){
                   // Iterar sobre a coleção para exibir o texto de cada parágrafo
                   for (var i = 0; i &lt; paragrafos.length; i++) {
                       console.log(paragrafos[i].textContent);
-                  }
+                     }
+                 }   
                </script>
                  </code>
                </pre>
@@ -265,10 +269,11 @@
                   /*script.js*/
                   // Selecionar todos os elementos &lt;p&gt;
                     var paragrafos = document.getElementsByTagName('p');
-            
+                     function exemplo4(){
                     // Iterar sobre a coleção para exibir o texto de cada parágrafo
                     for (var i = 0; i &lt; paragrafos.length; i++) {
                         console.log(paragrafos[i].textContent);
+                     }
                     }
                  </code>
                </pre>
