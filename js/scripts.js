@@ -31,8 +31,11 @@ window.addEventListener('DOMContentLoaded', () => {
     const btMC = document.getElementById("SelectMani");
     const btAtt = document.getElementById("SelectAtt");
     const btEvent = document.getElementById("SelectEvent");
-    const botaoBebidas = document.getElementById("scrolBebidas");
-    const botaoAcai = document.getElementById("scrolAcai");
+    
+    //firebase
+    const btCreateProject = document.getElementById("SelectCP");
+    const btAuth = document.getElementById("SelectConfigAuth"); 
+  
 
     btElement.addEventListener("click", function () {
         scrollToSection("TextSL");
@@ -49,12 +52,17 @@ window.addEventListener('DOMContentLoaded', () => {
     btEvent.addEventListener("click", function () {
         scrollToSection("TextEvent");
     });
-    botaoBebidas.addEventListener("click", function () {
-        scrollToSection("IDbebidas");
+
+    //Firebase
+    btCreateProject.addEventListener("click", function () {
+        scrollToSection("CP");
     });
-    botaoAcai.addEventListener("click", function () {
-        scrollToSection("IDacai");
+
+    btAuth.addEventListener("click", function () {
+        scrollToSection("ConfigAuth");
     });
+
+
     function scrollToSection(sectionId) {
         const target = document.getElementById(sectionId);
         const offset = target.offsetTop;

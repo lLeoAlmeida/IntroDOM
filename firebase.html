@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>JavaScript - DOM</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+    rel="stylesheet" type="text/css" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+</head>
+
+<body>
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="index.html">JavaScript - DOM </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto py-4 py-lg-0">
+          <li class="nav-item">
+            <a class="nav-link px-lg-3 py-3 py-lg-4" href="https://classroom.google.com/c/NTQyNDAxODc3ODQ3"
+              target="_blank">Classroom</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-lg-3 py-3 py-lg-4" href="https://classroom.google.com/c/NTQyNDAxODc3ODQ3"
+              target="_blank">Firebase</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-lg-3 py-3 py-lg-4" href="https://github.com/lLeoAlmeida/" target="_blank">Github</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Header-->
+  <header class="masthead" style="background-image: url('assets/img/unsplash.jpg')">
+    <div class="container position-relative px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+          <div class="post-heading">
+            <h1>Introdução ao Firebase</h1>
+            <span class="meta">
+              Posted by
+              <a href="#!">Prof. Leonardo</a>
+              em 22 de Setembro 2023
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Post Content-->
+  <article class="mb-4">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+          <h2 class="section-heading">Introdução ao <b>Firebase</b></h2>
+          <p>
+            O Firebase é uma plataforma de desenvolvimento de aplicativos móveis e web criada pelo Google. Ele oferece
+            uma variedade de serviços e ferramentas que ajudam os desenvolvedores a criar aplicativos de alta qualidade,
+            desde autenticação de usuários e armazenamento em nuvem até banco de dados em tempo real, hospedagem web e
+            mensagens em tempo real (Função que iremos utilizar). 
+            <br><br>
+            O Firebase é conhecido por sua facilidade de uso e integração perfeita
+            com aplicativos desenvolvidos em várias tecnologias, como Android, iOS e web. Ele permite que os
+            desenvolvedores construam aplicativos robustos e escaláveis sem se preocupar com a infraestrutura
+            subjacente, tornando o processo de desenvolvimento mais eficiente e ágil.
+            <br><br>
+            Como o Firebase é uma plataforma criada pelo Google, para utilizar ele basta realizar o login da sua conta google
+            (Gmail) acessando este link: <a href="https://firebase.google.com/?hl=pt" target="_blank">Firebase</a>
+          </p>
+
+          <h2 id="CP"class="section-heading">Criando um Projeto Firebase</h2>
+          <ol>
+            <li>
+               Acesse o <a href="https://console.firebase.google.com/u/0/">Console do Firebase</a>.
+            </li>
+            <li>
+              Clique em <i>"Adicionar projeto"</i> e siga as instruções para criar um novo projeto.
+            </li>
+            <li>
+              Depois que o projeto estiver criado, clique nele no Console do Firebase.
+            </li>
+          </ol>
+
+          <h2 id="ConfigAuth"class="section-heading">Configurar Autenticação</h2>
+          <ol>
+            <li>No painel do projeto, vá para "Autenticação" no menu esquerdo.</li>
+            <li>Clique na guia "Método de login" e habilite os métodos de login que deseja usar, como "E-mail/senha" e "Google".</li>
+            <li>Em "Método de login", você pode configurar as configurações de autenticação, como regras de criação de senha.</li>
+          </ol>
+          
+          <h2 class="section-heading">Configurar o Firebase no seu projeto</h2>
+          <ol>
+            <li>Na página do projeto, clique em "Configurações do projeto" (ícone de engrenagem) e vá para a guia "Geral".</li>
+            <li>Role para baixo até encontrar a seção "Seu aplicativo" e clique em "Adicionar aplicativo".</li>
+            <li>Siga as instruções para registrar seu aplicativo da web. Você receberá um código de configuração que se parece com isso:</li>
+            <img src="assets/img/code1.png" alt="" width="600em">
+            <li> Copie esse código JavaScript de configuração e cole-o em seu arquivo HTML ou em um arquivo JavaScript separado.</li>
+          </ol>
+
+  <!-- Footer-->
+  <footer class="border-top">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <button class="Btn">
+                <span class="svgContainer">
+                  <svg fill="white" viewBox="0 0 496 512" height="1.6em">
+                    <path
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                    </path>
+                  </svg>
+
+                </span>
+                <span class="BG"></span>
+              </button>
+            </li>
+          </ul>
+          <div class="small text-center text-muted fst-italic">
+            Copyright &copy; Prof. Leonardo
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
+
+  <script>
+    // Inicialize o Prism.js para destacar o código
+    Prism.highlightAll();
+  </script>
+
+</body>
+
+</html>

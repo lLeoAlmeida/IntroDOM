@@ -10903,3 +10903,11 @@ pre {
   transition-delay: 0.4s;
   color: aliceblue;
 }
+
+.zoom-image {
+  transition: transform 0.2s;
+}
+
+.zoom-image:hover {
+  transform: scale(1.2); /* Aumenta a escala em 20% */
+}
